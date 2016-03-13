@@ -1,6 +1,4 @@
 makeCacheMatrix <- function(x = matrix()) {
-  # http://stackoverflow.com/questions/24904683/caching-the-mean-of-a-vector-in-r
-  # https://www.snip2code.com/Snippet/803831/R-course-ProjectAssigment2
   inv <- NULL
   set <- function(y) {
     x <<- y
@@ -18,8 +16,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 cacheSolve <- function(x, ...) {
-  
-  # https://www.snip2code.com/Snippet/803831/R-course-ProjectAssigment2
   
   inv <- x$getinverse()
   
